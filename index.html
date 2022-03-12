@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- 1) Characters and symbols -->
+		<meta charset="UTF-8" />
+		<!-- 2) Displays site properly based on user's device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- 3) Preload fonts -->
+		<link rel="preload" as="font" href="./fonts/spartan-v10-latin-regular.woff2" type="font/woff2" crossorigin />
+		<link rel="preload" as="font" href="./fonts/spartan-v10-latin-regular.woff" type="font/woff" crossorigin />
+		<link rel="preload" as="font" href="./fonts/spartan-v10-latin-500.woff2" type="font/woff2" crossorigin />
+		<link rel="preload" as="font" href="./fonts/spartan-v10-latin-500.woff" type="font/woff" crossorigin />
+		<link rel="preload" as="font" href="./fonts/spartan-v10-latin-700.woff2" type="font/woff2" crossorigin />
+		<link rel="preload" as="font" href="./fonts/spartan-v10-latin-700.woff" type="font/woff" crossorigin />
+		<!-- 4) Preload css -->
+		<link rel="preload" as="style" href="css/style.min.css" />
+		<!-- 5) Title -->
+		<title>Frontend Mentor | Social proof section</title>
+		<!-- 6) Favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<!-- 7) Author -->
+		<meta name="author" content="Valeri Makaridze" />
+		<!-- 8) Description -->
+		<meta name="description" content="Social proof section challenge on Frontend Mentor" />
+		<!-- 9) Keywords -->
+		<meta name="keywords" content="front-end mentor, Valeri Makaridze, Valeri, Social proof section, challenge" />
+		<!-- 10) Theme color -->
+		<meta name="theme-color" content="#502050" />
+		<!-- 11) Facebook open graph -->
+		<meta property="og:title" content="Social proof section" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Social proof section challenge on Frontend Mentor" />
+		<!-- <meta property="og:image" content="https://faq-accordion-card-front-end.netlify.app/screenshot.png" /> -->
+		<meta property="og:image:alt" content="Social proof section" />
+		<!-- <meta property="og:url" content="https://faq-accordion-card-front-end.netlify.app/" /> -->
+		<!-- 12) Twitter card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Social proof section" />
+		<meta name="twitter:description" content="Social proof section challenge on Frontend Mentor" />
+		<meta name="twitter:site" content="@Valeri79125128" />
+		<!-- <meta
+			name="twitter:image"
+			content="https://faq-accordion-card-front-end.netlify.app/screenshot.png"
+		/> -->
+		<meta property="twitter:image:alt" content="Social proof section" />
+		<meta name="twitter:creator" content="@Valeri79125128" />
+		<!-- 13) Css -->
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+	<body>
+		<!-- Main -->
+		<main class="social">
+			<!-- Header -->
+			<section class="social__header">
+				<h1 class="social__header-title">10,000+ of our users love our products.</h1>
+				<p class="social__header-text">
+					We only provide great products combined with excellent customer service. See what our satisfied
+					customers are saying about our services.
+				</p>
+			</section>
+
+			<!-- Social rates -->
+			<div class="social__rates">
+				<!-- Rate 1 -->
+				<figure class="social__rate">
+					<div class="social__rate-stars">
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+					</div>
+					<figcaption class="social__rate-description">Rated 5 Stars in Reviews</figcaption>
+				</figure>
+				<!-- Rate 2 -->
+				<figure class="social__rate">
+					<div class="social__rate-stars">
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+					</div>
+					<figcaption class="social__rate-description">Rated 5 Stars in Report Guru</figcaption>
+				</figure>
+				<!-- Rate 3 -->
+				<figure class="social__rate">
+					<div class="social__rate-stars">
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+						<img class="social__rate-star" src="./images/icon-star.svg" alt="Star" />
+					</div>
+					<figcaption class="social__rate-description">Rated 5 Stars in BestTech</figcaption>
+				</figure>
+			</div>
+
+			<!-- Testemonials -->
+			<div class="social__testemonials">
+				<!-- Testimonial 1 -->
+				<figure class="social__testemonial">
+					<figcaption class="social__testemonial-person">
+						<img
+							class="social__testemonial-image"
+							src="./images/image-colton.jpg"
+							width="50"
+							height="50"
+							alt="Calton Smith"
+						/>
+						<cite class="social__testemonial-name">Calton Smith</cite>
+						<p class="social__testemonial-buyer">Verified Buyer</p>
+					</figcaption>
+					<blockquote class="social__testemonial-blockquote">
+						"We needed the same printed design as the one we had ordered a week prior. Not only did they
+						find the original order, but we also received it in time. Excellent!"
+					</blockquote>
+				</figure>
+				<!-- Testimonial 2 -->
+				<figure class="social__testemonial">
+					<figcaption class="social__testemonial-person">
+						<img
+							class="social__testemonial-image"
+							src="./images/image-irene.jpg"
+							width="50"
+							height="50"
+							alt="Irene Roberts"
+						/>
+						<cite class="social__testemonial-name">Irene Roberts</cite>
+						<p class="social__testemonial-buyer">Verified Buyer</p>
+					</figcaption>
+					<blockquote class="social__testemonial-blockquote">
+						"Customer service is always excellent and very quick turn around. Completely delighted with the
+						simplicity of the purchase and the speed of delivery."
+					</blockquote>
+				</figure>
+				<!-- Testimonial 3 -->
+				<figure class="social__testemonial">
+					<figcaption class="social__testemonial-person">
+						<img
+							class="social__testemonial-image"
+							src="./images/image-anne.jpg"
+							width="50"
+							height="50"
+							alt="Anne Wallace"
+						/>
+						<cite class="social__testemonial-name">Anne Wallace</cite>
+						<p class="social__testemonial-buyer">Verified Buyer</p>
+					</figcaption>
+					<blockquote class="social__testemonial-blockquote">
+						"Put an order with this company and can only praise them for the very high standard. Will
+						definitely use them again and recommend them to everyone!"
+					</blockquote>
+				</figure>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p class="footer__text">
+				Challenge by
+				<a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>.
+			</p>
+			<p class="footer__text">
+				Coded by
+				<a class="footer__link" href="#">Valeri</a>.
+			</p>
+		</footer>
+	</body>
+</html>

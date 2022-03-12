@@ -1,0 +1,52 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+
+.social {
+	&__testemonials {
+		@include desktop {
+			grid-area: testemonials;
+			display: flex;
+			gap: 2em;
+			margin-top: 2.5em;
+		}
+	}
+	&__testemonial {
+		margin-bottom: 1.25em;
+		padding: 3em 2.25em 2.5em;
+		background-color: var(--very-dark-magenta);
+		border-radius: 0.5em;
+		font-size: 1.4rem;
+		text-align: left;
+		color: var(--white);
+		@include desktop {
+			font-size: 1.29rem;
+			line-height: 1.8;
+			&:first-child {
+				transform: translateY(-1.25em);
+			}
+			&:last-child {
+				transform: translateY(1.25em);
+			}
+		}
+		&-person {
+			display: grid;
+			grid:
+				'image name'
+				'image buyer'
+				/ 30% 70%;
+			margin-bottom: 1.5em;
+		}
+		&-image {
+			grid-area: image;
+			border-radius: 50%;
+		}
+		&-name {
+			grid-area: name;
+			font-weight: weight(bold);
+		}
+		&-buyer {
+			grid-area: buyer;
+			color: var(--soft-pink);
+		}
+	}
+}

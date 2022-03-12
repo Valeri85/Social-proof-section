@@ -1,0 +1,48 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+
+.social {
+	&__rates {
+		@include desktop {
+			grid-area: rates;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 0.75em;
+		}
+	}
+	&__rate {
+		background-color: var(--light-grayish-agenta);
+		margin-bottom: 1.25em;
+		padding: 1em;
+		border-radius: 0.5em;
+		@include desktop {
+			display: flex;
+			place-items: center;
+			width: 70%;
+			&:nth-child(2) {
+				transform: translateX(3.2em);
+			}
+			&:nth-child(3) {
+				transform: translateX(6.4em);
+			}
+		}
+		&-stars {
+			display: flex;
+			justify-content: center;
+			gap: 0.6em;
+			margin-bottom: 1em;
+			@include desktop {
+				flex-basis: 40%;
+				margin-bottom: 0;
+			}
+		}
+		&-description {
+			font-size: 1.4rem;
+			font-weight: weight(bold);
+			@include desktop {
+				flex-basis: 60%;
+			}
+		}
+	}
+}

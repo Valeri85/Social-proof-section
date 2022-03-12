@@ -1,0 +1,28 @@
+{
+	"name": "social-proof-section-master",
+	"version": "1.0.0",
+	"description": "Social proof section challenge on Frontend Mentor",
+	"main": "index.js",
+	"scripts": {
+		"sync": "npx browser-sync start --server --files 'index.html' --watch --no-notify",
+		"sass:watch": "npx sass -w scss/style.scss:css/style.css",
+		"groupMedia": "npx group-css-media-queries css/style.css css/style.css",
+		"postcss:autoprefixer": "npx postcss css/style.css -u autoprefixer -r",
+		"sass:compressed": "npx sass css/style.css:css/style.min.css --style compressed",
+		"build": "npm run groupMedia && npm run postcss:autoprefixer && npm run sass:compressed"
+	},
+	"keywords": [],
+	"author": "Valeri",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.2",
+		"browser-sync": "^2.27.7",
+		"group-css-media-queries": "^1.4.1",
+		"postcss": "^8.4.8",
+		"postcss-cli": "^9.1.0",
+		"sass": "^1.49.9"
+	},
+	"browserslist": [
+		"> 0.01%"
+	]
+}

@@ -1,0 +1,33 @@
+@use '../helpers/functions' as *;
+@use '../helpers/mixins' as *;
+
+.social {
+	@include desktop {
+		display: grid;
+		grid:
+			'header rates'
+			'testemonials testemonials'
+			/ 42.5% 57.5%;
+	}
+	&__header {
+		@include desktop {
+			grid-area: header;
+		}
+		&-title {
+			margin-bottom: 1em;
+			padding-inline: 1em;
+			font-size: 3rem;
+			line-height: 1;
+			@include desktop {
+				margin-bottom: 0.5em;
+				padding-inline: 0;
+				font-size: 4.5rem;
+			}
+		}
+		&-text {
+			margin-bottom: 3em;
+			font-weight: weight(medium);
+			color: var(--dark-grayish-agenta);
+		}
+	}
+}

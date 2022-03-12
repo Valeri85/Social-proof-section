@@ -1,0 +1,31 @@
+@use '../helpers/functions' as *;
+
+/* spartan-regular */
+@font-face {
+	font-family: Spartan;
+	font-display: swap;
+	src: url('../fonts/spartan-v10-latin-regular.woff2') format('woff2'),
+		url('../fonts/spartan-v10-latin-regular.woff') format('woff');
+	font-weight: weight(regular);
+	font-style: normal;
+}
+
+/* spartan-500 */
+@font-face {
+	font-family: Spartan;
+	font-display: swap;
+	src: url('../fonts/spartan-v10-latin-500.woff2') format('woff2'),
+		url('../fonts/spartan-v10-latin-500.woff') format('woff');
+	font-weight: weight(medium);
+	font-style: normal;
+}
+
+/* spartan-700 */
+@font-face {
+	font-family: Spartan;
+	font-display: swap;
+	src: url('../fonts/spartan-v10-latin-700.woff2') format('woff2'),
+		url('../fonts/spartan-v10-latin-700.woff') format('woff');
+	font-weight: weight(bold);
+	font-style: normal;
+}

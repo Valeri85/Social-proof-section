@@ -1,0 +1,19 @@
+@use '../helpers/mixins' as *;
+
+body {
+	display: grid;
+	place-content: center;
+	padding: 5em 1em;
+	background-image: url('../../images/bg-pattern-top-mobile.svg'),
+		url('../../images/bg-pattern-bottom-mobile.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top, bottom;
+	text-align: center;
+	@include desktop {
+		padding: 8em 14em 0 14em;
+		background-image: url('../../images/bg-pattern-top-desktop.svg'),
+			url('../../images/bg-pattern-bottom-desktop.svg');
+		background-position: 5% 0, 100% 110%;
+		text-align: left;
+	}
+}
